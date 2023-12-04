@@ -1,0 +1,99 @@
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #f1f1f1, #d3d3d3);
+}
+
+/* Page container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+/* Button styles */
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.button-container button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Custom team colors */
+.button-container button.csk {
+  background-color: #FF7F00; /* CSK - Yellow */
+}
+
+.button-container button.mi {
+  background-color: #004BA0; /* MI - Blue */
+}
+
+.button-container button.rcb {
+  background-color: #FF2630; /* RCB - Red */
+}
+
+.button-container button.srh {
+  background-color: #FB4F14; /* SRH - Orange */
+}
+
+.button-container button.gt {
+  background-color: #7F00FF; /* GT - Purple */
+}
+
+.button-container button.lsg {
+  background-color: #FF8C00; /* LSG - Dark Orange */
+}
+
+.button-container button.kkr {
+  background-color: #2E0854; /* KKR - Black */
+}
+
+.button-container button.dc {
+  background-color: #004C93; /* DC - Blue */
+}
+
+.button-container button.pbks {
+  background-color: #740A11; /* PBKS - Maroon */
+}
+
+.button-container button.rr {
+  background-color: #335699; /* RR - Blue */
+}
+
+.button-container button:hover {
+  opacity: 0.8;
+}
+
+/* Background design */
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}

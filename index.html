@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IPL Points Table</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>IPL Points Table</h1>
+  
+  <table id="points-table">
+    <tr>
+      <th>Team</th>
+      <th>Points</th>
+      <th>Matches Played</th>
+       <!--<button onclick="undoMatches('csk')">Undo</button>--> 
+    </tr>
+    <tr>
+      <td>CSK</td>
+      <td id="csk-points">15</td>
+      <td id="csk-matches">13</td>
+      <td>
+        <button onclick="updateMatches('csk')">Update</button>
+        <button onclick="undoMatches('csk')">Undo</button>
+      </td>
+    </tr>
+    <tr>
+      <td>MI</td>
+      <td id="mi-points">14</td>
+      <td id="mi-matches">12</td>
+      <td>
+        <button onclick="updateMatches('mi')">Update</button>
+        <button onclick="undoMatches('mi')">Undo</button>
+      </td>
+    </tr>
+    <tr>
+      <td>RCB</td>
+      <td id="rcb-points">12</td>
+      <td id="rcb-matches">12</td>
+      <td>
+        <button onclick="updateMatches('rcb')">Update</button>
+        <button onclick="undoMatches('rcb')">Undo</button>
+      </td>
+    </tr>
+    <tr>
+      <td>SRH</td>
+      <td id="srh-points">8</td>
+      <td id="srh-matches">11</td>
+      <td>
+        <button onclick="updateMatches('srh')">Update</button>
+        <button onclick="undoMatches('srh')">Undo</button>
+      </td>
+    </tr>
+    <tr>
+      <td>GT</td>
+      <td id="gt-points">16</td>
+      <td id="gt-matches">12</td>
+      <td>
+        <button onclick="updateMatches('gt')">Update</button>
+        <button onclick="undoMatches('gt')">Undo</button>
+      </td>
+    </tr>
+    <tr>
+      <td>LSG</td>
+      <td id="lsg-points">13</td>
+      <td id="lsg-matches">12</td>
+      <td>
+        <button onclick="updateMatches('lsg')">Update</button>
+        <button onclick="undoMatches('lsg')">Undo</button>
+      </td>
+    </tr>
+    <tr>
+      <td>KKR</td>
+      <td id="kkr-points">12</td>
+      <td id="kkr-matches">13</td>
+      <td>
+        <button onclick="updateMatches('kkr')">Update</button>
+        <button onclick="undoMatches('kkr')">Undo</button>
+      </td>
+    </tr>
+    <tr>
+      <td>DC</td>
+      <td id="dc-points">8</td>
+      <td id="dc-matches">12</td>
+      <td>
+        <button onclick="updateMatches('dc')">Update</button>
+        <button onclick="undoMatches('dc')">Undo</button>
+      </td>
+    </tr>
+    <tr>
+      <td>PBKS</td>
+      <td id="pbks-points">12</td>
+      <td id="pbks-matches">12</td>
+      <td>
+        <button onclick="updateMatches('pbks')">Update</button>
+        <button onclick="undoMatches('pbks')">Undo</button>
+      </td>
+    </tr>
+    <tr>
+      <td>RR</td>
+      <td id="rr-points">12</td>
+      <td id="rr-matches">13</td>
+      <td>
+        <button onclick="updateMatches('rr')">Update</button>
+        <button onclick="undoMatches('rr')">Undo</button>
+      </td>
+    </tr>
+  </table>
+  
+  <div>
+    <label for="team-select">Select the winning team:</label>
+    <select id="team-select">
+      <option value="">Choose a team</option>
+      <option value="csk">CSK</option>
+      <option value="mi">MI</option>
+      <option value="rcb">RCB</option>
+      <option value="srh">SRH</option>
+      <option value="gt">GT</option>
+      <option value="lsg">LSG</option>
+      <option value="kkr">KKR</option>
+      <option value="dc">DC</option>
+      <option value="pbks">PBKS</option>
+      <option value="rr">RR</option>
+    </select>
+    <button onclick="updatePoints()">Enter</button>
+    <button onclick="undoPoints()">Undo</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
